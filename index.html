@@ -1,0 +1,22 @@
+---
+layout: default
+title: Home
+---
+<section class="wrap hero">
+  <h1>{{ site.tagline }}</h1>
+  <p class="lede">I turn messy data into decisions people can act on, and I photograph the places I travel to when I'm away from the keyboard. Replace this paragraph with two sentences about your focus.</p>
+</section>
+
+<section class="wrap block">
+  <div class="block-head"><h2>Recent projects</h2><a href="{{ '/projects/' | relative_url }}">See all</a></div>
+  {% include project-list.html limit=3 %}
+</section>
+
+<section class="wrap block">
+  <div class="block-head"><h2>Photography</h2><a href="{{ '/gallery/' | relative_url }}">Open gallery</a></div>
+  <div class="strip">
+    {% for ph in site.data.photos limit:4 %}
+      <a href="{{ '/gallery/' | relative_url }}"><img src="{{ ph.file | relative_url }}" alt="{{ ph.alt }}" width="{{ ph.w }}" height="{{ ph.h }}" loading="lazy"></a>
+    {% endfor %}
+  </div>
+</section>

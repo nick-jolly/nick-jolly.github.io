@@ -1,0 +1,28 @@
+---
+layout: default
+title: Photography
+permalink: /gallery/
+gallery: true
+---
+<section class="wrap page-head">
+  <h1>Photography</h1>
+  <p class="lede">Select a photo to view it larger. Use the arrow keys to move between photos.</p>
+</section>
+<section class="wrap">
+  <div class="masonry">
+    {% for ph in site.data.photos %}
+    <figure>
+      <button type="button" class="open" data-index="{{ forloop.index0 }}" data-full="{{ ph.file | relative_url }}" data-caption="{{ ph.caption | escape }}">
+        <img src="{{ ph.file | relative_url }}" alt="{{ ph.alt }}" width="{{ ph.w }}" height="{{ ph.h }}" loading="lazy">
+      </button>
+      <figcaption>{{ ph.caption }}</figcaption>
+    </figure>
+    {% endfor %}
+  </div>
+</section>
+<dialog id="viewer" aria-label="Photo viewer">
+  <button type="button" class="close" aria-label="Close">Close</button>
+  <img alt="">
+  <p class="cap"></p>
+  <div class="nav"><button type="button" class="prev">Previous</button><button type="button" class="next">Next</button></div>
+</dialog>

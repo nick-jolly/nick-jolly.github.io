@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article class="wrap narrow project">
+  <a class="back" href="{{ '/projects/' | relative_url }}">All projects</a>
+  <h1>{{ page.title }}</h1>
+  <p class="lede">{{ page.summary }}</p>
+  <dl class="facts">
+    <div><dt>Year</dt><dd>{{ page.year }}</dd></div>
+    <div><dt>Tools</dt><dd>{{ page.tools | join: ", " }}</dd></div>
+    {% if page.result %}<div><dt>Result</dt><dd>{{ page.result }}</dd></div>{% endif %}
+    {% if page.repo %}<div><dt>Code</dt><dd><a href="{{ page.repo }}">Repository</a></dd></div>{% endif %}
+  </dl>
+  <div class="prose">{{ content }}</div>
+</article>
