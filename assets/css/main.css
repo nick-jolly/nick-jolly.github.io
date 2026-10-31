@@ -31,7 +31,18 @@ h2 { font-size: 1.5rem; font-weight: 700; }
 .site-header nav a:hover, .site-footer a:hover { color: var(--accent); }
 .site-header nav a[aria-current="page"] { border-bottom: 2px solid var(--accent); }
 
-.hero { padding-block: clamp(3rem, 10vw, 7rem) 2rem; }
+.hero {
+  padding-block: clamp(3rem, 10vw, 7rem) 2rem;
+  background-image: url('../hero_sky.png');
+  background-repeat: no-repeat;
+  background-position: center center; 
+  background-size: cover; 
+  background-attachment: fixed; 
+  min-height: 60vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .hero h1 { max-width: 14ch; }
 .page-head { padding-block: 3rem 1.5rem; }
 .block { padding-block: 2.5rem; }
