@@ -14,10 +14,15 @@ collections:
   projects:
     output: true
     permalink: /projects/:name/
+  gis:
+    output: true
+    permalink: /gis/:name/
 
 defaults:
   - scope: { path: "", type: projects }
     values: { layout: project }
+  - scope: { path: "", type: gis }
+    values: { layout: gis }
 
 markdown: kramdown
 exclude: [Gemfile, Gemfile.lock, README.md, vendor]

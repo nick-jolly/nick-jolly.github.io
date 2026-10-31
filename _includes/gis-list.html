@@ -1,4 +1,4 @@
-{% assign items = site.projects | sort: "year" | reverse %}
+{% assign items = site.gis | sort: "year" | reverse %}
 {% if include.limit %}{% assign items = items | slice: 0, include.limit %}{% endif %}
 <ul class="project-list">
 {% for p in items %}
