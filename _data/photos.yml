@@ -1,8 +1,11 @@
 # Add photos to assets/photos/, then list them here. w and h are pixel dimensions
 # (they prevent the page jumping while images load). Order here = order on the site.
-- { file: /assets/photos/photo-01.svg, w: 1200, h: 800,  alt: "Placeholder landscape", caption: "Replace with your caption" }
-- { file: /assets/photos/photo-02.svg, w: 800,  h: 1200, alt: "Placeholder portrait",  caption: "Replace with your caption" }
-- { file: /assets/photos/photo-03.svg, w: 1200, h: 900,  alt: "Placeholder landscape", caption: "Replace with your caption" }
-- { file: /assets/photos/photo-04.svg, w: 900,  h: 1200, alt: "Placeholder portrait",  caption: "Replace with your caption" }
-- { file: /assets/photos/photo-05.svg, w: 1200, h: 800,  alt: "Placeholder landscape", caption: "Replace with your caption" }
-- { file: /assets/photos/photo-06.svg, w: 1000, h: 1000, alt: "Placeholder square",    caption: "Replace with your caption" }
+- { file: /assets/photos/photo_001.JPG, w: 1800, h: 1204,  alt: "Placeholder landscape", caption: "Replace with your caption" }
+- { file: /assets/photos/photo_002.JPG, w: 1800,  h: 1204, alt: "Placeholder portrait",  caption: "Replace with your caption" }
+- { file: /assets/photos/photo_003.JPG, w: 1800, h: 1201,  alt: "Placeholder landscape", caption: "Replace with your caption" }
+- { file: /assets/photos/photo_004.JPG, w: 1800,  h: 1204, alt: "Placeholder portrait",  caption: "Replace with your caption" }
+- { file: /assets/photos/photo_005.JPG, w: 1800, h: 1204,  alt: "Placeholder landscape", caption: "Replace with your caption" }
+- { file: /assets/photos/photo_006.JPG, w: 1800, h: 1217, alt: "Placeholder square",    caption: "Replace with your caption" }
+- { file: /assets/photos/photo_007.JPG, w: 1800, h: 1216, alt: "Placeholder square",    caption: "Replace with your caption" }
+- { file: /assets/photos/photo_008.JPG, w: 1800, h: 1217, alt: "Placeholder square",    caption: "Replace with your caption" }
+- { file: /assets/photos/photo_009.JPG, w: 1800, h: 1216, alt: "Placeholder square",    caption: "Replace with your caption" }
