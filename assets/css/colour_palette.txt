@@ -1,0 +1,15 @@
+
+Backgrounds
+#f2f2f2
+#ece0d9
+#676564
+
+Text
+#212121
+#36454F
+#ffffff
+
+Accents
+#1d5a79
+#488da0
+#5E3B31

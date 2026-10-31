@@ -7,8 +7,8 @@ baseurl: ""
 url: ""
 
 social:
-  github: yourusername
-  linkedin: yourusername
+  github: nick-jolly
+  linkedin: njolly
 
 collections:
   projects:
