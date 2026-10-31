@@ -70,9 +70,13 @@ h2 { font-size: 1.5rem; font-weight: 700; }
   .project-list .result { text-align: left; max-width: none; }
 }
 
-.strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: .75rem; align-items: end; margin-top: 1rem; }
-.strip img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
-@media (max-width: 640px) { .strip { grid-template-columns: repeat(2, 1fr); } }
+.strip-gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: .75rem; align-items: end; margin-top: 1rem; }
+.strip-gallery img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+@media (max-width: 640px) { .strip-gallery { grid-template-columns: repeat(2, 1fr); } }
+
+.strip-gis { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; align-items: end; margin-top: 1rem; }
+.strip-gis img { width: 100%; aspect-ratio: 3/2; object-fit: cover; }
+@media (max-width: 640px) { .strip-gis { grid-template-columns: repeat(1, 1fr); } }
 
 .masonry { columns: 3 280px; column-gap: 1rem; padding-bottom: 3rem; }
 .masonry figure { margin: 0 0 1.25rem; break-inside: avoid; }

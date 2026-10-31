@@ -1,0 +1,3 @@
+- { file: /assets/gis/figure-01.png, w: 600, h: 400,  alt: "Placeholder 01", caption: "Replace with your caption" }
+- { file: /assets/gis/figure-02.png, w: 600,  h: 400, alt: "Placeholder 02",  caption: "Replace with your caption" }
+- { file: /assets/gis/figure-03.png, w: 600, h: 400,  alt: "Placeholder 03", caption: "Replace with your caption" }
