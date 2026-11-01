@@ -11,16 +11,16 @@ social:
   linkedin: njolly
 
 collections:
-  projects:
+  ml:
     output: true
-    permalink: /projects/:name/
+    permalink: /ml/:name/
   gis:
     output: true
     permalink: /gis/:name/
 
 defaults:
-  - scope: { path: "", type: projects }
-    values: { layout: project }
+  - scope: { path: "", type: ml }
+    values: { layout: ml }
   - scope: { path: "", type: gis }
     values: { layout: gis }
 
