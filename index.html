@@ -14,18 +14,25 @@ title: Home
 
 <section class="wrap block">
   <div class="block-head"><h2>Spatial Analysis</h2><a href="{{ '/gis/' | relative_url }}">See all</a></div>
-  <div class="strip-gis">
-    {% for ph in site.data.gis limit:3 %}
-      <a href="{{ '/gis/' | relative_url }}"><img src="{{ ph.file | relative_url }}" alt="{{ ph.alt }}" width="{{ ph.w }}" height="{{ ph.h }}" loading="lazy"></a>
-    {% endfor %}
-  </div>
+<div class="strip-gis">
+  {% for ph in site.data.gis limit:3 %}
+  <a class="tile" href="{{ '/gis/' | relative_url }}">
+    <img src="{{ ph.file | relative_url }}" alt="{{ ph.alt }}" width="{{ ph.w }}" height="{{ ph.h }}" loading="lazy">
+    <span class="tile-cap" aria-hidden="true">{{ ph.alt }}</span>
+  </a>
+  {% endfor %}
+</div>
 </section>
+
 
 <section class="wrap block">
   <div class="block-head"><h2>Photography</h2><a href="{{ '/gallery/' | relative_url }}">Open gallery</a></div>
   <div class="strip-gallery">
     {% for ph in site.data.photos limit:4 %}
-      <a href="{{ '/gallery/' | relative_url }}"><img src="{{ ph.file | relative_url }}" alt="{{ ph.alt }}" width="{{ ph.w }}" height="{{ ph.h }}" loading="lazy"></a>
+    <a class="tile" href="{{ '/gallery/' | relative_url }}">
+      <img src="{{ ph.file | relative_url }}" alt="{{ ph.alt }}" width="{{ ph.w }}" height="{{ ph.h }}" loading="lazy">
+      <span class="tile-cap" aria-hidden="true">{{ ph.alt }}</span>
+    </a>
     {% endfor %}
   </div>
 </section>
