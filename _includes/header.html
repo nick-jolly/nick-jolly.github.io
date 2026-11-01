@@ -1,0 +1,11 @@
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <nav aria-label="Primary">
+      <a href="{{ '/about/' | relative_url }}" {% if page.url contains '/about' %}aria-current="page"{% endif %}>About</a>
+      <a href="{{ '/ml/' | relative_url }}" {% if page.url contains '/ml' %}aria-current="page"{% endif %}>Machine Learning</a>
+      <a href="{{ '/gis/' | relative_url }}" {% if page.url contains '/gis' %}aria-current="page"{% endif %}>Spatial Analysis</a>
+      <!-- <a href="{{ '/gallery/' | relative_url }}" {% if page.url contains '/gallery' %}aria-current="page"{% endif %}>Photography</a> -->
+    </nav>
+  </div>
+</header>

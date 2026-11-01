@@ -1,0 +1,17 @@
+{% assign items = site.ml | sort: "year" | reverse %}
+{% if include.limit %}{% assign items = items | slice: 0, include.limit %}{% endif %}
+<ul class="project-list">
+{% for i in items %}
+  <li>
+    <a href="{{ i.url | relative_url }}">
+      <span class="year">{{ i.year }}</span>
+      <span class="body">
+        <strong>{{ i.title }}</strong>
+        <span class="sum">{{ i.summary }}</span>
+        <span class="tools">{{ i.tools | join: ", " }}</span>
+      </span>
+      {% if i.result %}<span class="result">{{ i.result }}</span>{% endif %}
+    </a>
+  </li>
+{% endfor %}
+</ul>

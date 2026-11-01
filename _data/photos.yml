@@ -1,0 +1,11 @@
+# Add photos to assets/photos/, then list them here. w and h are pixel dimensions
+# (they prevent the page jumping while images load). Order here = order on the site.
+- { file: /assets/photos/photo-01.JPG, w: 1800, h: 1204,  alt: "Placeholder landscape", caption: "Replace with your caption" }
+- { file: /assets/photos/photo-02.JPG, w: 1800,  h: 1204, alt: "Placeholder portrait",  caption: "Replace with your caption" }
+- { file: /assets/photos/photo-03.JPG, w: 1800, h: 1201,  alt: "Placeholder landscape", caption: "Replace with your caption" }
+- { file: /assets/photos/photo-04.JPG, w: 1800,  h: 1204, alt: "Placeholder portrait",  caption: "Replace with your caption" }
+- { file: /assets/photos/photo-05.JPG, w: 1800, h: 1204,  alt: "Placeholder landscape", caption: "Replace with your caption" }
+- { file: /assets/photos/photo-06.JPG, w: 1800, h: 1217, alt: "Placeholder square",    caption: "Replace with your caption" }
+- { file: /assets/photos/photo-07.JPG, w: 1800, h: 1216, alt: "Placeholder square",    caption: "Replace with your caption" }
+- { file: /assets/photos/photo-08.JPG, w: 1800, h: 1217, alt: "Placeholder square",    caption: "Replace with your caption" }
+- { file: /assets/photos/photo-09.JPG, w: 1800, h: 1216, alt: "Placeholder square",    caption: "Replace with your caption" }
