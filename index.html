@@ -4,6 +4,36 @@ title: Home
 ---
 <section class="wrap hero">
   <h1>{{ site.tagline }}</h1>
-  <p class="lede">Full site coming soon</p>
+  <p class="lede">I turn messy data into decisions people can act on, and I photograph the places I travel to when I'm away from the keyboard. Replace this paragraph with two sentences about your focus.</p>
 </section>
 
+<section class="wrap block divider">
+  <div class="block-head"><h2>Machine Learning</h2><a href="{{ '/ml/' | relative_url }}">See all</a></div>
+  {% include ml-list.html limit=3 %}
+</section>
+
+<section class="wrap block">
+  <div class="block-head"><h2>Spatial Analysis</h2><a href="{{ '/gis/' | relative_url }}">See all</a></div>
+<div class="strip-gis">
+  {% for ph in site.data.gis limit:3 %}
+  <a class="tile" href="{{ '/gis/' | relative_url }}">
+    <img src="{{ ph.file | relative_url }}" alt="{{ ph.alt }}" width="{{ ph.w }}" height="{{ ph.h }}" loading="lazy">
+    <span class="tile-cap" aria-hidden="true">{{ ph.alt }}</span>
+  </a>
+  {% endfor %}
+</div>
+</section>
+
+
+<!-- <section class="wrap block">
+  <div class="block-head"><h2>Photography</h2><a href="{{ '/gallery/' | relative_url }}">Open gallery</a></div>
+  <div class="strip-gallery">
+    {% for ph in site.data.photos limit:4 %}
+    <a class="tile" href="{{ '/gallery/' | relative_url }}">
+      <img src="{{ ph.file | relative_url }}" alt="{{ ph.alt }}" width="{{ ph.w }}" height="{{ ph.h }}" loading="lazy">
+      <span class="tile-cap" aria-hidden="true">{{ ph.alt }}</span>
+    </a>
+    {% endfor %}
+  </div> -->
+</section>
+<section class="wrap block"></section>
