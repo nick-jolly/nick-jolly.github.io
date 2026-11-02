@@ -52,7 +52,6 @@ h2 { font-size: 1.5rem; font-weight: 700; }
 .site-header nav a:hover { border-bottom: 1px solid var(--ink); }
 .hero {
   padding-block: clamp(3rem, 10vw, 7rem) 2rem;
-  margin-bottom: 1.5rem;
   background-image: url('../hero_sky.png');
   background-repeat: no-repeat;
   background-position: center center; 
@@ -69,8 +68,7 @@ h2 { font-size: 1.5rem; font-weight: 700; }
   padding-block: 2.5rem;
   padding-block-end: 2rem;
   background-color: #ece0d9;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem; }
+}
 .block-head {
   display: flex;
   justify-content: space-between;
@@ -80,6 +78,13 @@ h2 { font-size: 1.5rem; font-weight: 700; }
 }
 .block-head a { color: var(--ink); }
 .block-head a:hover { color: var(--accent); }
+.divider {
+  background-image: linear-gradient(to right, var(--rule), var(--rule));
+  background-position: bottom center;
+  background-size: 98% 1px;
+  background-repeat: no-repeat;
+  padding-bottom: 1rem;
+}
 
 .project-list { list-style: none; margin: 0; padding: 0; }
 .project-list li { border-top: 0.25px solid var(--rule); }
