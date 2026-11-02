@@ -9,6 +9,8 @@ permalink: /about/
 
 Write a short, specific introduction here: what you work on, what you're curious about, and what you're looking for next.
 
+---
+
 ## Skillset
 
 Python, SQL, scikit-learn, PyTorch, dbt, Tableau. Edit this list to match your own.
