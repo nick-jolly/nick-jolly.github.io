@@ -92,7 +92,7 @@ h2 { font-size: 1.5rem; font-weight: 700; }
 .project-list a { display: grid; grid-template-columns: 4rem 1fr auto; gap: 1.25rem; padding: 1.4rem 0; color: inherit; text-decoration: none; }
 .project-list a:hover strong { color: var(--accent); }
 .project-list .year { font-family: var(--head); color: var(--muted); }
-.project-list .circle { object-fit: cover; border-radius: 50%; }
+.project-list .circle { border-radius: 50%; }
 .project-list strong { font-family: var(--head); font-size: 1.3rem; display: block; }
 .project-list .sum, .project-list .tools { display: block; color: var(--muted); }
 .project-list .tools { font-size: .95rem; margin-top: .25rem; }
