@@ -1,16 +1,19 @@
-{% assign items = site.gis | sort: "year" | reverse %}
+{% assign items = site.gis | sort: "order" %}
 {% if include.limit %}{% assign items = items | slice: 0, include.limit %}{% endif %}
 <ul class="project-list">
-{% for p in items %}
+{% for i in items %}
   <li>
-    <a href="{{ p.url | relative_url }}">
-      <span class="year">{{ p.year }}</span>
-      <span class="body">
-        <strong>{{ p.title }}</strong>
-        <span class="sum">{{ p.summary }}</span>
-        <span class="tools">{{ p.tools | join: ", " }}</span>
+    <a href="{{ i.url | relative_url }}">
+      <!-- <span class="year">{{ i.year }}</span> -->
+      <span class="thumbnail">
+        <img class="circle" src="{{ i.thumbnail-src }}" alt="{{ i.summary }}">
       </span>
-      {% if p.result %}<span class="result">{{ p.result }}</span>{% endif %}
+      <span class="body">
+        <strong>{{ i.title }}</strong>
+        <span class="sum">{{ i.summary }}</span>
+        <span class="tools">{{ i.tools | join: ", " }}</span>
+      </span>
+      {% if i.result %}<span class="result">{{ i.result }}</span>{% endif %}
     </a>
   </li>
 {% endfor %}

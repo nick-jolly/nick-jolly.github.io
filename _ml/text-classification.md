@@ -1,10 +1,12 @@
 ---
 title: Text Classification
 summary: Binary classificaiton model to detect fake news
+order: 1
 year: 2026
 tools: [NLP, Neural Networks, Pytorch, Python]
 # result: 18% fewer cancellations in a retention pilot
 repo: https://github.com/nick-jolly/ml-text-classification
+thumbnail-src: /assets/ml/text-classification/thumbnail.png
 ---
 ## Challenge
 To create a binary classification model which accurately classifies fake news articles. Key issues include class imbalance in the training data, and model family selection.

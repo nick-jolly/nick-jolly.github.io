@@ -1,10 +1,12 @@
 ---
 title: Environmental Monitoring
 summary: Regression based on environmental monitoring data
+order: 2
 year: 2026
 tools: [Docker, PostGIS, Linear Modeling, Hypothesis Testing]
 # result: Three corridors account for 40% of delay minutes
 repo: https://github.com/yourusername/transit-delays
+thumbnail-src: /assets/ml/environmental-monitoring/thumbnail.png
 ---
 ## Challenge
 To develop and assess regresion models to understand key factors impacting environmental conditions at different sites across Victoria.

@@ -5,6 +5,7 @@ year: 2026
 tools: [Spatial Analysis, QGIS]
 # result: 18% fewer cancellations in a retention pilot
 # repo: https://github.com/nick-jolly/ml-text-classification
+thumbnail-src: /assets/gis/project-01/thumbnail.png
 ---
 ## Challenge
 To create a binary classification model which accurately classifies fake news articles. Key issues include class imbalance in the training data, and model family selection.
