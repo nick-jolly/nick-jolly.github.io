@@ -4,9 +4,13 @@
 {% for i in items %}
   <li>
     <a href="{{ i.url | relative_url }}">
-      <!-- <span class="year">{{ i.year }}</span> -->
+      
       <span class="thumbnail">
+        {% if include.include-thumbnail != 0 %}
         <img class="circle" src="{{ i.thumbnail-src }}" alt="{{ i.summary }}">
+        {% else %}
+        <span class="year">{{ i.year }}</span>
+        {% endif %}
       </span>
       <span class="body">
         <strong>{{ i.title }}</strong>
